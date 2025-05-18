@@ -1,5 +1,7 @@
+# entry.py
 import tkinter as tk
 
 def create(root, theme):
-    entry_field = tk.Entry(root, width=40, bg=theme.BG, fg=theme.FG)
-    entry_field.pack(side="bottom", pady=5)
+    entrada = tk.Entry(root, font=("Arial", 20), width=50)
+    entrada.pack(side=tk.LEFT, padx=10, pady=10)
+    return entrada

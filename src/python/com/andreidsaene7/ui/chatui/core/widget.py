@@ -1,6 +1,6 @@
-from abc import ABC, abstractmethod
+class BaseWidget:
+    def __init__(self, widget):
+        self.widget = widget
 
-class Widget(ABC):
-    @abstractmethod
-    def build(self, master): pass
-
+    def show(self):
+        self.widget.pack(pady=5, padx=10)
